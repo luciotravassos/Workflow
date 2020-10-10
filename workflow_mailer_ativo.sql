@@ -1,0 +1,5 @@
+/* VERIFICA O STATUS DO WORKFLOW MAILER */
+SELECT component_name, component_status "WF Notification Mailer Status"
+  FROM apps.fnd_svc_components
+ --WHERE component_type = 'WF_MAILER';
+

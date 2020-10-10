@@ -1,0 +1,6 @@
+-- Total de tentativas de envio XML
+SELECT  * --eol.sender_message_id, COUNT (*)
+    FROM apps.ecx_oxta_logmsg eol
+   WHERE TRUNC (eol.begin_date) = TRUNC (SYSDATE)
+--GROUP BY eol.sender_message_id
+
